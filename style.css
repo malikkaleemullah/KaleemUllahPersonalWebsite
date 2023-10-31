@@ -1,0 +1,26 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: antiquewhite;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.barIcons {
+    display: flex;
+    justify-content: space-around;
+    width: max-content;
+    flex-grow: 0.27;
+    padding-right: 1rem;
+}
+.intorduction {
+    padding-top: 10rem;
+}
