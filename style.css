@@ -1,30 +1,30 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7Mc9bMjTvTGC2YXgTUZmF1fP6FER16wOt8l_QKH9c1O6BSvemEKKYKsbDzl_Wrz90ws&usqp=CAU);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
-}
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the transparency level */
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items:baseline;
-    width: 99%;
-    background-color: rgb(14, 12, 12);
+    width: 100%;
     height: 90px;
     position: fixed;
-    border-radius: 5rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .barIcons {
     display: flex;
@@ -41,6 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-left: 5rem;
+    cursor: pointer;
 }
 .my {
     font-family: Arial, Helvetica, sans-serif;
@@ -53,7 +54,7 @@ header {
     font-weight: 650;
     font-size: xx-large;
     font-stretch: normal;
-    color: rgb(71, 71, 238);
+    color: #0064E1;
 }
 .BI {
     font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +65,7 @@ header {
 
 }
 .BI:hover {
-    color:rgb(71, 71, 238) ;
+    color:#0064E1 ;
 }
 .mainContainer {
     padding-left: 5rem;
@@ -91,7 +92,7 @@ header {
     font-size: 50px;
     font-weight: bolder;
     font-stretch: normal;
-    color:rgb(71, 71, 238) ;
+    color:#0064E1 ;
     margin-top: 5px;
     margin-bottom: 0px;
 }
@@ -101,7 +102,7 @@ header {
 }
 .identity {
     display: flex;
-
+    height: 60px;
 }
 .skills {
     margin-bottom: 0px;
@@ -109,6 +110,14 @@ header {
     font-size: larger;
     font-weight: 600;
     margin-left: 1rem;
+    width: 30%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .intro {
     font-family: Arial, Helvetica, sans-serif;
@@ -117,7 +126,48 @@ header {
     font-style: inherit;
 }
 .intro span:hover {
-    text-decoration: underline;
-    color:rgb(71, 71, 238) ;
-    background-color: rgb(28, 12, 12);
+    background-color: rgba(22, 13, 13, 0.114);
+
+}
+.contectlogos {
+    display: flex;
+    align-items: baseline;
+    width: 25%;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.CL {
+    height: 30px;
+}
+/* Style for the buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Adjust the margin according to your design */
+    width: 30%;
+}
+
+/* Style for the buttons */
+.buttons button {
+    background-color: #4444; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Make buttons inline elements */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Show hand cursor on hover */
+    border-radius: 2rem;
+}
+
+/* Style for the button links */
+.buttons button a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect */
+.buttons button:hover {
+    background-color: #0064E1; /* Darker green color on hover */
 }
