@@ -7,16 +7,20 @@ body {
     background-repeat: no-repeat;
     color: white;
 
+    
+}
+.mainContainer {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items:baseline;
-    width: 100%;
+    width: 98%;
     height: 90px;
     position: fixed;
     /* From https://css.glass */
@@ -25,8 +29,9 @@ header {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.3px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
 }
-.barIcons {
+nav {
     display: flex;
     justify-content: space-around;
     width: max-content;
@@ -55,6 +60,7 @@ header {
     font-size: xx-large;
     font-stretch: normal;
     color: #0064E1;
+    text-shadow: 2px 0px black;
 }
 .BI {
     font-family: Arial, Helvetica, sans-serif;
@@ -95,6 +101,7 @@ header {
     color:#0064E1 ;
     margin-top: 5px;
     margin-bottom: 0px;
+    text-shadow: 2px 0px black;
 }
 .intorduction {
     display: flex;
@@ -118,6 +125,7 @@ header {
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 3px 0 black;
 }
 .intro {
     font-family: Arial, Helvetica, sans-serif;
@@ -126,7 +134,8 @@ header {
     font-style: inherit;
 }
 .intro span:hover {
-    background-color: rgba(22, 13, 13, 0.114);
+    text-shadow: 1px 0px black;
+    color: azure;
 
 }
 .contectlogos {
@@ -169,5 +178,5 @@ header {
 
 /* Hover effect */
 .buttons button:hover {
-    background-color: #0064E1; /* Darker green color on hover */
+    background-color: #0064E1;
 }
